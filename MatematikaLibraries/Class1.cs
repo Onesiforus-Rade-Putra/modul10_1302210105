@@ -29,13 +29,13 @@
             return result;
         }
 
-        public static string turunan(int[] persamaan)
+        public static string turunan(int v, int[] persamaan)
         {
             int n;
             int i;
             string result;
             int[] turunan = new int[persamaan.Length];
-            n = persamaan.Length ;
+            n = persamaan.Length-1;
             for (i =1; i <= n; i++)
             {
                 turunan[i] = persamaan[i]*(n-i);
